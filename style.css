@@ -6,19 +6,104 @@
   --couleurViolet: #9356DC;
   --couleurRose: #FF79DA;
   --couleurVerte: #99E2D0;
+  --couleurGris: rgb(200, 198, 198);
+}
+
+body {
+  font-family: var(--policeTexte);
 }
 
 h1 {
-  font-family: var(--policeTitre);
+  font-family: var(--policeTexte);
   font-size: 22px;
   font-weight: bold;
   color: black;
 }
 
 h2 {
-  font-family: var(--policeTitre);
-  font-size: 18px;
+  font-family: var(--policeTexte);
+  font-size: 21px;
   color: black;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 740px) {
+  header {
+    width: 100%;
+    padding: 10px;
+  }
+  header nav {
+    text-align: center;
+  }
+  header nav img {
+    margin: auto;
+    width: 55%;
+  }
+
+  .trouverResto {
+    text-align: center;
+    padding: 20px;
+  }
+  .trouverResto h1 {
+    width: 214px;
+    text-align: center;
+    margin: auto;
+  }
+  .trouverResto p {
+    text-align: center;
+  }
+  .trouverResto button {
+    background: #ff79da;
+    background: radial-gradient(circle, #ff79da 0%, #9356dc 100%);
+    padding: 15px;
+    color: white;
+    border: transparent;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    border-radius: 22px;
+    border: transparent;
+    font-size: 16px;
+    box-shadow: 3px 10px 32px -2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 3px 10px 32px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 10px 32px -2px rgba(0, 0, 0, 0.75);
+  }
+
+  .fonctionnementResto {
+    padding: 20px;
+  }
+  .fonctionnementResto ol {
+    list-style: none;
+  }
+  .fonctionnementResto ol li {
+    padding: 20px;
+    border: 1px solid transparent;
+    color: #c8c6c6;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 3px 10px 24px -2px rgba(0, 0, 0, 0.39);
+    -webkit-box-shadow: 3px 10px 24px -2px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 3px 10px 24px -2px rgba(0, 0, 0, 0.39);
+    margin-bottom: 27px;
+    color: black;
+  }
+
+  .link {
+    border-radius: 20px;
+  }
+  .link .cardResto img {
+    width: 376px;
+    height: 198px;
+    object-fit: cover;
+  }
+  .link .cardResto div {
+    display: flex;
+  }
+  .link .cardResto div .icone {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

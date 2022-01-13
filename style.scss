@@ -8,18 +8,127 @@
     --couleurViolet: #9356DC;
     --couleurRose: #FF79DA;
     --couleurVerte: #99E2D0;
+    --couleurGris: rgb(200, 198, 198);
 
 }
 
+body{
+    font-family: var(--policeTexte);
+}
+
 h1{
-    font-family: var(--policeTitre);
+    font-family: var(--policeTexte);
     font-size: 22px;
     font-weight: bold;
     color: black;
 }
 
 h2{
-    font-family: var(--policeTitre);
-    font-size: 18px;
+    font-family: var(--policeTexte);
+    font-size: 21px;
     color: black;
+    font-weight: bold;
+}
+
+
+// style du header
+// mobile first
+
+@media screen and (max-width: 740px) { 
+    
+    header{
+        
+        width: 100%;
+        padding: 10px;
+
+        nav{
+            text-align: center;
+            
+
+            img{
+                margin: auto;
+                width: 55%;
+            }
+        }
+    }
+
+    .trouverResto{
+        text-align: center;
+        padding: 20px;
+
+        h1{
+            width: 214px;
+            text-align: center;
+            margin: auto;
+        }
+        p{
+            text-align: center;
+        }
+
+        button{
+            background: rgb(255,121,218);
+            background: radial-gradient(circle, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+            padding: 15px;
+            color: white;
+            border: transparent;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            border-radius: 22px;
+            border: transparent;
+            font-size: 16px;
+            box-shadow: 3px 10px 32px -2px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 3px 10px 32px -2px rgba(0,0,0,0.75);
+            -moz-box-shadow: 3px 10px 32px -2px rgba(0,0,0,0.75);
+        }
+    }
+
+    // style de la partie Fonctionnement
+
+    .fonctionnementResto{
+        padding: 20px;
+        
+        ol{
+            list-style: none;
+            li{
+                padding: 20px;
+                border: 1px solid transparent;
+                color:rgb(200, 198, 198);
+                border-radius: 20px;
+                align-items: center;
+                text-align: center;
+                display: flex;
+                justify-content: space-evenly;
+                box-shadow: 3px 10px 24px -2px rgba(0,0,0,0.39);
+                -webkit-box-shadow: 3px 10px 24px -2px rgba(0,0,0,0.39);
+                -moz-box-shadow: 3px 10px 24px -2px rgba(0,0,0,0.39);
+                margin-bottom: 27px;
+                color: black;
+
+            }
+        }
+
+    }
+
+    .link{
+        border-radius: 20px;
+
+        .cardResto{
+
+            img{
+                width: 376px;
+                height: 198px;
+                object-fit: cover;
+            }
+
+            div{
+                display: flex;
+
+                .icone{
+                    display: flex;
+                }
+            }
+        }
+    }
+    
+    
 }
