@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+// =======================VARIABLES=============
+@import "./utils/variables";
+
+//=========================NORMES===================
+@import "./base/normes";
+
+@media screen and (max-width: 740px) { 
+
+ //=================HEADER=======================
+@import "./layout/header";
+
+//=====LOCALISATION=======
+@import "./layout/localisation";
+
+//=================TROUVER UN RESTO BTN=============
+@import "./components/trouverResto";
+
+//==================FONCTIONNEMENT RESTO===============
+@import "./pages/fonctionnementResto";
+    
+//=====================RESTAURANTS MENU ==================
+ @import "./pages/restaurants";
+    
+//===== FOOTER =====
+@import "./layout/footer";
+    
+
+    
+    
+    
+}

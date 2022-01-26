@@ -1,0 +1,33 @@
+footer{
+    background-color: rgb(110, 109, 109);
+    width: 100%;
+    padding-bottom: 10px;
+
+    div{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 20px;
+        line-height: 1.5;
+
+        img{
+            width: 150px;
+            height: auto;
+            margin-bottom: 15px;
+
+            .colorSvg{
+                fill: white;
+                background-color: white;
+            }
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+
+            .footer{
+                color: white;
+            }
+        }
+    }
+}
