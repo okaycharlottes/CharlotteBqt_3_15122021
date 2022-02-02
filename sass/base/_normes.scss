@@ -1,18 +1,18 @@
 body{
-    font-family: var(--policeTexte);
+    font-family: $policeTexte;
     margin:0;
 
 }
 
 h1{
-    font-family: var(--policeTexte);
+    font-family: $policeTexte;
     font-size: 22px !important;
     font-weight: bold;
     color: black;
 }
 
 h2{
-    font-family: var(--policeTexte);
+    font-family: $policeTexte;
     font-size: 21px;
     color: black;
     font-weight: bold;

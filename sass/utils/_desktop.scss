@@ -1,0 +1,70 @@
+
+@media only screen and (min-width: 738px) {
+    header {
+
+        nav{
+            img{
+                width: 22% !important;
+            }
+        }
+    }
+
+    .trouverResto {
+        h1{
+            width: 100% !important;
+        }
+    }
+        
+
+        .fonctionnementResto {
+            ol{
+                display: flex !important;
+                justify-content: space-evenly !important;
+                a{
+                    
+                    li{
+                        width: 100% !important;
+                        transition: ease 0.3s;
+
+                        &:hover{
+                            background-color: #9356dc1f;
+                            
+                        } 
+
+        
+                        span{
+                            position: relative !important;
+                            left:-56px !important; 
+                        }
+                    }
+                }
+            }
+            
+        }
+         
+         
+        
+    
+        .Restaurant{
+            .flex{
+                display: flex;
+            }
+            .link{
+
+                .cardResto {
+                    width: 343px !important;
+                    margin-right: 10px !important;
+                }
+            }
+        } 
+        
+        footer{
+            div{
+                display: flex !important;
+                align-items: center !important;
+                line-height: 2.5 !important;
+            }
+        }
+
+
+}

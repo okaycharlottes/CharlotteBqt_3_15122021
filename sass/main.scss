@@ -3,11 +3,9 @@
 
 // =======================VARIABLES=============
 @import "./utils/variables";
-
+@import "./utils/desktop";
 //=========================NORMES===================
 @import "./base/normes";
-
-@media screen and (max-width: 740px) { 
 
  //=================HEADER=======================
 @import "./layout/header";
@@ -31,4 +29,3 @@
     
     
     
-}

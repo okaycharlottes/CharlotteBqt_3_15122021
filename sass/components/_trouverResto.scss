@@ -1,7 +1,7 @@
 .trouverResto{
     text-align: center;
     padding: 44px 20px;
-    background-color: #eff5f5;
+    background-color: $couleurGris;
 
     h1{
         width: 216px;
@@ -29,5 +29,6 @@
         box-shadow: 3px 10px 32px -2px rgba(0,0,0,0.39);
         -webkit-box-shadow: 3px 10px 32px -2px rgba(0,0,0,0.39);
         -moz-box-shadow: 3px 10px 32px -2px rgba(0,0,0,0.39);
+        cursor: pointer;
     }
 }

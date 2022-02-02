@@ -1,5 +1,6 @@
 .Restaurant{
     padding: 20px;
+    background-color: $couleurGris;
 
     .link{
         border-radius: 20px;
@@ -40,16 +41,45 @@
                     display: flex;
                     align-items: center;
                     padding: 27px;
+                    
 
-                    i{
-                        color: black;
-                        font-size: 22px;
+                    .empty{
+                        position: relative;
+                        left: 22px;
 
-                        &:hover{
-                            color: $couleurViolet;
-                        
+                        i{
+                            color: black;
+                            font-size: 22px; 
+                            transition: ease-in 0.4s;  
+                
+                            &:hover{
+                                opacity: 0;
+                                color: $couleurViolet;
+                            }
                         }
                     }
+
+                    .full{
+                        
+
+                        i{
+                            color: black;
+                            font-size: 22px;
+                            opacity: 0;
+                            transition: ease-in 0.4s;
+                           
+                            &:hover{
+                                opacity: 1;
+                                color: rgba(147,86,220,1);
+                            }
+                
+                        }
+
+
+                    }
+
+                    
+                    
                 }
 
                 .cardBody{
