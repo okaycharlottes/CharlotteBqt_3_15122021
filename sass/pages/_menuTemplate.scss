@@ -1,0 +1,138 @@
+main{
+
+    position: absolute;
+    width: 100%;
+    margin-top: -11px;
+
+    .container{
+
+        background-color: $couleurGris;
+        padding: 15px;
+    
+        .entrees{
+    
+            h2{
+                text-transform: uppercase;
+                font-family: $policeTexte;
+                font-weight: 300;
+                color: $couleurIconeGris;
+                font-size: 17px;
+                margin-bottom: 0;
+    
+            }
+
+            .trait{
+                border-top: 3px solid $couleurVerte;
+                width: 40px;
+                margin-bottom: 15px;
+            }
+    
+            ._entree{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 346px;
+                text-align: start;
+                background: white;
+                border-radius: 10px;
+                margin: auto;
+                padding: 10px;
+                margin-bottom: 15px;
+    
+                h3{
+                    margin: 0;
+                }
+    
+                p{
+                    margin-top: 5px;
+                    margin-bottom: 0;
+                }
+                
+            }
+        }
+    
+        .plats{
+    
+            padding-top: 15px;
+    
+            h2{
+                text-transform: uppercase;
+                font-family: $policeTexte;
+                font-weight: 300;
+                color: $couleurIconeGris;
+                font-size: 17px;
+                margin-bottom: 0;
+    
+            }
+            .trait{
+                border-top: 3px solid $couleurVerte;
+                width: 40px;
+                margin-bottom: 15px;
+            }
+    
+            ._plat{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 346px;
+                text-align: start;
+                background: white;
+                border-radius: 10px;
+                margin: auto;
+                padding: 10px;
+                margin-bottom: 15px;
+    
+                h3{
+                    margin: 0;
+                }
+    
+                p{
+                    margin-top: 5px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    
+        .desserts{
+    
+            padding-top: 15px;
+            
+            h2{
+                text-transform: uppercase;
+                font-family: $policeTexte;
+                font-weight: 300;
+                color: $couleurIconeGris;
+                font-size: 17px;
+                margin-bottom: 0;
+    
+            }
+            .trait{
+                border-top: 3px solid $couleurVerte;
+                width: 40px;
+                margin-bottom: 15px;
+            }
+            ._dessert{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 346px;
+                text-align: start;
+                background: white;
+                border-radius: 10px;
+                margin: auto;
+                padding: 10px;
+                margin-bottom: 15px;
+    
+                h3{
+                    margin: 0;
+                }
+    
+                p{
+                    margin-top: 5px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+

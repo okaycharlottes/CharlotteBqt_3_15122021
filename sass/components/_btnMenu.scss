@@ -1,0 +1,25 @@
+.centerBtn{
+    text-align: center;
+    background-color: $couleurGris;
+    padding-top: 20px;
+    padding-bottom: 25px;
+
+    .btnMenu{
+        background: rgb(147,86,220);
+            background: linear-gradient(353deg, rgba(147,86,220,1) 22%, rgba(255,121,218,1) 74%);
+            padding: 15px;
+            color: white;
+            border: transparent;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            border-radius: 22px;
+            border: transparent;
+            font-size: 16px;
+            box-shadow: 3px 10px 32px -2px rgba(0,0,0,0.39);
+            -webkit-box-shadow: 3px 10px 32px -2px rgba(0,0,0,0.39);
+            -moz-box-shadow: 3px 10px 32px -2px rgba(0,0,0,0.39);
+            cursor: pointer;
+    }
+}
+
+

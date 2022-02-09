@@ -4,6 +4,7 @@
 // =======================VARIABLES=============
 @import "./utils/variables";
 @import "./utils/desktop";
+@import "./utils/loader";
 //=========================NORMES===================
 @import "./base/normes";
 
@@ -24,6 +25,18 @@
     
 //===== FOOTER =====
 @import "./layout/footer";
+
+//==============================PAGE MENU ============================
+
+//====IMAGE HERO=====
+@import "./components/imgHero";
+
+//======Titre MENU ======
+@import "./components/titreMenu";
+
+@import "./pages/menuTemplate";
+
+@import "./components/btnMenu";
     
 
     

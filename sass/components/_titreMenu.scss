@@ -1,0 +1,21 @@
+.titreMenu{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $couleurGris;
+    margin-top: -39px;
+    border-radius: 63px 67px 0 0px;
+    padding-top: 16px;
+
+    i{
+        font-size: 20px;
+    }
+
+    .h1Menu{
+        font-family:$policeTitre;
+        letter-spacing: 1px;
+        font-size: 25px !important;
+        
+    }
+}

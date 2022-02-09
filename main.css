@@ -39,6 +39,34 @@
     line-height: 2.5 !important;
   }
 }
+.loader {
+  background-color: #ffffff;
+  opacity: 0.8;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  z-index: 66;
+  animation: loader 200ms 3s;
+  animation-fill-mode: forwards;
+  transform-origin: top;
+}
+.loader i {
+  animation: spin 2s infinite linear;
+}
+
+@keyframes loader {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -77,14 +105,14 @@ header nav img {
   margin-bottom: 15px;
 }
 
-h3 {
+.localisation h3 {
   background-color: #e3e3e3;
   margin: 0;
   padding: 14px;
   font-size: 16px;
   text-align: center;
 }
-h3 i {
+.localisation h3 i {
   padding-right: 12px;
 }
 
@@ -264,6 +292,168 @@ footer div a {
 }
 footer div a .footer {
   color: white;
+}
+
+.imgHero {
+  width: 100%;
+}
+.imgHero img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.titreMenu {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f6f6f6;
+  margin-top: -39px;
+  border-radius: 63px 67px 0 0px;
+  padding-top: 16px;
+}
+.titreMenu i {
+  font-size: 20px;
+}
+.titreMenu .h1Menu {
+  font-family: "Shrikhand", cursive;
+  letter-spacing: 1px;
+  font-size: 25px !important;
+}
+
+main {
+  position: absolute;
+  width: 100%;
+  margin-top: -11px;
+}
+main .container {
+  background-color: #f6f6f6;
+  padding: 15px;
+}
+main .container .entrees h2 {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #7c7c7c;
+  font-size: 17px;
+  margin-bottom: 0;
+}
+main .container .entrees .trait {
+  border-top: 3px solid #99E2D0;
+  width: 40px;
+  margin-bottom: 15px;
+}
+main .container .entrees ._entree {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 346px;
+  text-align: start;
+  background: white;
+  border-radius: 10px;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+main .container .entrees ._entree h3 {
+  margin: 0;
+}
+main .container .entrees ._entree p {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+main .container .plats {
+  padding-top: 15px;
+}
+main .container .plats h2 {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #7c7c7c;
+  font-size: 17px;
+  margin-bottom: 0;
+}
+main .container .plats .trait {
+  border-top: 3px solid #99E2D0;
+  width: 40px;
+  margin-bottom: 15px;
+}
+main .container .plats ._plat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 346px;
+  text-align: start;
+  background: white;
+  border-radius: 10px;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+main .container .plats ._plat h3 {
+  margin: 0;
+}
+main .container .plats ._plat p {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+main .container .desserts {
+  padding-top: 15px;
+}
+main .container .desserts h2 {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #7c7c7c;
+  font-size: 17px;
+  margin-bottom: 0;
+}
+main .container .desserts .trait {
+  border-top: 3px solid #99E2D0;
+  width: 40px;
+  margin-bottom: 15px;
+}
+main .container .desserts ._dessert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 346px;
+  text-align: start;
+  background: white;
+  border-radius: 10px;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+main .container .desserts ._dessert h3 {
+  margin: 0;
+}
+main .container .desserts ._dessert p {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.centerBtn {
+  text-align: center;
+  background-color: #f6f6f6;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+.centerBtn .btnMenu {
+  background: #9356dc;
+  background: linear-gradient(353deg, #9356dc 22%, #ff79da 74%);
+  padding: 15px;
+  color: white;
+  border: transparent;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  border-radius: 22px;
+  border: transparent;
+  font-size: 16px;
+  box-shadow: 3px 10px 32px -2px rgba(0, 0, 0, 0.39);
+  -webkit-box-shadow: 3px 10px 32px -2px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 3px 10px 32px -2px rgba(0, 0, 0, 0.39);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */
