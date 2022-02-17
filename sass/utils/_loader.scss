@@ -1,16 +1,39 @@
+// .loader{
+//     background-color: #ffffff;
+//     opacity: 0.8;
+//     height: 100vh;
+//     position:fixed;
+//     inset: 0;
+//     z-index: 66;
+//     animation: loader 200ms 3s;
+//     animation-fill-mode: forwards;
+//     transform-origin: top;
+
+//     i{
+//         animation: spin 2s infinite linear;
+//     }
+// }
+
 .loader{
+    $animation-duration: 3s;
+    position: fixed;
+    display: grid;
+    place-items: center;
     background-color: #ffffff;
-    opacity: 0.8;
     height: 100vh;
-    position:fixed;
     inset: 0;
-    z-index: 66;
-    animation: loader 200ms 3s;
-    animation-fill-mode: forwards;
+    opacity: 0.9;
+    animation: loader 200ms $animation-duration forwards;
     transform-origin: top;
 
-    i{
-        animation: spin 2s infinite linear;
+    &::after{
+        content: "";
+        height: 100px;
+        width: 100px;
+        border-top: 5px solid $couleurViolet;
+        border-right: 5px solid transparent;
+        border-radius: 50%;
+        animation: spin $animation-duration infinite ease-in-out;
     }
 }
 
@@ -29,3 +52,4 @@
         transform: rotate(360deg);
     }
 }
+
