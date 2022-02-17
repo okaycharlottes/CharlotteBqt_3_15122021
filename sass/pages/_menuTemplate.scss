@@ -10,6 +10,7 @@ main{
         padding: 15px;
     
         .entrees{
+            
     
             h2{
                 text-transform: uppercase;
@@ -36,25 +37,68 @@ main{
                 background: white;
                 border-radius: 10px;
                 margin: auto;
-                padding: 10px;
+                padding-left: 10px;
                 margin-bottom: 15px;
+                overflow: hidden;
+                box-shadow: 3px 11px 24px 6px rgba(176,172,172,0.2);
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            
     
                 h3{
                     margin: 0;
+                    font-weight:500;
+                    text-overflow: ellipsis;
                 }
     
                 p{
                     margin-top: 5px;
                     margin-bottom: 0;
+                    font-weight: 300;
+                    color: $couleurIconeGris;
+                    text-overflow: ellipsis;
                 }
 
                 .items-c{
                     
                     display: flex;
-                    i{
-                        font-size: 20px;
-                        color: green;
+                    align-items: center;
+
+                    p{
+                        color: black;
+                        font-weight: 400;
                     }
+
+                    .check{
+                        padding: 10px;
+                        background-color: $couleurVerte;
+                        width: 39px;
+                        height: 49px;
+                        border-radius: 0px 10px 10px 0px;
+                        display: inline-grid;
+                        text-align: center;
+                        align-items: center;
+                        margin-left: 10px;
+                        margin-right: -4rem;
+                        transition: margin-right 0.5s;
+
+
+                        i{
+                            font-size: 25px;
+                            color: white;
+                        }
+                    }
+
+                    &:hover{
+                        .check{
+                            margin-right: 0;
+                        }
+
+                        i{
+                            animation: rotate 1s ease;
+                        }
+                    } 
+                    
                 }
                 
             }
@@ -80,6 +124,7 @@ main{
             }
     
             ._plat{
+
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -88,16 +133,65 @@ main{
                 background: white;
                 border-radius: 10px;
                 margin: auto;
-                padding: 10px;
+                padding-left: 10px;
                 margin-bottom: 15px;
+                overflow: hidden;
+                box-shadow: 3px 11px 24px 6px rgba(176,172,172,0.2);
+                text-overflow: ellipsis;
+                white-space: nowrap;
     
                 h3{
                     margin: 0;
+                    font-weight:500;
                 }
     
                 p{
                     margin-top: 5px;
                     margin-bottom: 0;
+                    font-weight: 300;
+                    color: $couleurIconeGris;
+                }
+
+                .items-c{
+                    
+                    display: flex;
+                    align-items: center;
+
+                    p{
+                        color: black;
+                        font-weight: 400;
+                    }
+
+                    .check{
+                        padding: 10px;
+                        background-color: $couleurVerte;
+                        width: 39px;
+                        height: 49px;
+                        border-radius: 0px 10px 10px 0px;
+                        display: inline-grid;
+                        text-align: center;
+                        align-items: center;
+                        margin-left: 10px;
+                        margin-right: -4rem;
+                        transition: margin-right 0.5s;
+
+
+                        i{
+                            font-size: 25px;
+                            color: white;
+                        }
+                    }
+
+                    &:hover{
+                        .check{
+                            margin-right: 0;
+                        }
+
+                        i{
+                            animation: rotate 1s ease;
+                        }
+                    } 
+                    
                 }
             }
         }
@@ -129,16 +223,65 @@ main{
                 background: white;
                 border-radius: 10px;
                 margin: auto;
-                padding: 10px;
+                padding-left: 10px;
                 margin-bottom: 15px;
+                overflow: hidden;
+                box-shadow: 3px 11px 24px 6px rgba(176,172,172,0.2);
+                text-overflow: ellipsis;
+                white-space: nowrap;
     
                 h3{
                     margin: 0;
+                    font-weight:500;
                 }
     
                 p{
                     margin-top: 5px;
                     margin-bottom: 0;
+                    font-weight: 300;
+                    color: $couleurIconeGris;
+                }
+
+                .items-c{
+                    
+                    display: flex;
+                    align-items: center;
+
+                    p{
+                        color: black;
+                        font-weight: 400;
+                    }
+
+                    .check{
+                        padding: 10px;
+                        background-color: $couleurVerte;
+                        width: 39px;
+                        height: 49px;
+                        border-radius: 0px 10px 10px 0px;
+                        display: inline-grid;
+                        text-align: center;
+                        align-items: center;
+                        margin-left: 10px;
+                        margin-right: -4rem;
+                        transition: margin-right 0.5s;
+
+
+                        i{
+                            font-size: 25px;
+                            color: white;
+                        }
+                    }
+
+                    &:hover{
+                        .check{
+                            margin-right: 0;
+                        }
+
+                        i{
+                            animation: rotate 1s ease;
+                        }
+                    } 
+                    
                 }
             }
         }

@@ -33,6 +33,10 @@
     margin-right: 10px !important;
   }
 
+  ._entree, ._plat, ._dessert {
+    width: 100% !important;
+  }
+
   footer div {
     display: flex !important;
     align-items: center !important;
@@ -294,12 +298,12 @@ header nav img {
   padding-top: 16px;
 }
 .titreMenu i {
-  font-size: 20px;
+  font-size: 30px;
 }
 .titreMenu .h1Menu {
   font-family: "Shrikhand", cursive;
   letter-spacing: 1px;
-  font-size: 25px !important;
+  font-size: 35px !important;
 }
 
 main {
@@ -333,15 +337,55 @@ main .container .entrees ._entree {
   background: white;
   border-radius: 10px;
   margin: auto;
-  padding: 10px;
+  padding-left: 10px;
   margin-bottom: 15px;
+  overflow: hidden;
+  box-shadow: 3px 11px 24px 6px rgba(176, 172, 172, 0.2);
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 main .container .entrees ._entree h3 {
   margin: 0;
+  font-weight: 500;
+  text-overflow: ellipsis;
 }
 main .container .entrees ._entree p {
   margin-top: 5px;
   margin-bottom: 0;
+  font-weight: 300;
+  color: #7c7c7c;
+  text-overflow: ellipsis;
+}
+main .container .entrees ._entree .items-c {
+  display: flex;
+  align-items: center;
+}
+main .container .entrees ._entree .items-c p {
+  color: black;
+  font-weight: 400;
+}
+main .container .entrees ._entree .items-c .check {
+  padding: 10px;
+  background-color: #99E2D0;
+  width: 39px;
+  height: 49px;
+  border-radius: 0px 10px 10px 0px;
+  display: inline-grid;
+  text-align: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: -4rem;
+  transition: margin-right 0.5s;
+}
+main .container .entrees ._entree .items-c .check i {
+  font-size: 25px;
+  color: white;
+}
+main .container .entrees ._entree .items-c:hover .check {
+  margin-right: 0;
+}
+main .container .entrees ._entree .items-c:hover i {
+  animation: rotate 1s ease;
 }
 main .container .plats {
   padding-top: 15px;
@@ -368,15 +412,53 @@ main .container .plats ._plat {
   background: white;
   border-radius: 10px;
   margin: auto;
-  padding: 10px;
+  padding-left: 10px;
   margin-bottom: 15px;
+  overflow: hidden;
+  box-shadow: 3px 11px 24px 6px rgba(176, 172, 172, 0.2);
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 main .container .plats ._plat h3 {
   margin: 0;
+  font-weight: 500;
 }
 main .container .plats ._plat p {
   margin-top: 5px;
   margin-bottom: 0;
+  font-weight: 300;
+  color: #7c7c7c;
+}
+main .container .plats ._plat .items-c {
+  display: flex;
+  align-items: center;
+}
+main .container .plats ._plat .items-c p {
+  color: black;
+  font-weight: 400;
+}
+main .container .plats ._plat .items-c .check {
+  padding: 10px;
+  background-color: #99E2D0;
+  width: 39px;
+  height: 49px;
+  border-radius: 0px 10px 10px 0px;
+  display: inline-grid;
+  text-align: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: -4rem;
+  transition: margin-right 0.5s;
+}
+main .container .plats ._plat .items-c .check i {
+  font-size: 25px;
+  color: white;
+}
+main .container .plats ._plat .items-c:hover .check {
+  margin-right: 0;
+}
+main .container .plats ._plat .items-c:hover i {
+  animation: rotate 1s ease;
 }
 main .container .desserts {
   padding-top: 15px;
@@ -403,15 +485,53 @@ main .container .desserts ._dessert {
   background: white;
   border-radius: 10px;
   margin: auto;
-  padding: 10px;
+  padding-left: 10px;
   margin-bottom: 15px;
+  overflow: hidden;
+  box-shadow: 3px 11px 24px 6px rgba(176, 172, 172, 0.2);
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 main .container .desserts ._dessert h3 {
   margin: 0;
+  font-weight: 500;
 }
 main .container .desserts ._dessert p {
   margin-top: 5px;
   margin-bottom: 0;
+  font-weight: 300;
+  color: #7c7c7c;
+}
+main .container .desserts ._dessert .items-c {
+  display: flex;
+  align-items: center;
+}
+main .container .desserts ._dessert .items-c p {
+  color: black;
+  font-weight: 400;
+}
+main .container .desserts ._dessert .items-c .check {
+  padding: 10px;
+  background-color: #99E2D0;
+  width: 39px;
+  height: 49px;
+  border-radius: 0px 10px 10px 0px;
+  display: inline-grid;
+  text-align: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: -4rem;
+  transition: margin-right 0.5s;
+}
+main .container .desserts ._dessert .items-c .check i {
+  font-size: 25px;
+  color: white;
+}
+main .container .desserts ._dessert .items-c:hover .check {
+  margin-right: 0;
+}
+main .container .desserts ._dessert .items-c:hover i {
+  animation: rotate 1s ease;
 }
 
 .centerBtn {
@@ -437,6 +557,14 @@ main .container .desserts ._dessert p {
   cursor: pointer;
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 footer {
   background-color: #353535;
   width: 100%;

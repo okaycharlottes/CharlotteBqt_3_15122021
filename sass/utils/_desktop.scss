@@ -57,6 +57,10 @@
                 }
             }
         } 
+
+        ._entree, ._plat, ._dessert{
+            width: 100% !important;
+        }
         
         footer{
             div{
@@ -65,6 +69,7 @@
                 line-height: 2.5 !important;
             }
         }
+
 
 
 }
