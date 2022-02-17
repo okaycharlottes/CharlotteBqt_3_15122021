@@ -135,10 +135,15 @@ main{
                 margin: auto;
                 padding-left: 10px;
                 margin-bottom: 15px;
-                overflow: hidden;
+                
                 box-shadow: 3px 11px 24px 6px rgba(176,172,172,0.2);
-                text-overflow: ellipsis;
-                white-space: nowrap;
+                
+
+                .items{
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
     
                 h3{
                     margin: 0;

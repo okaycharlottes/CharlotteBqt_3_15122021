@@ -418,8 +418,10 @@ main .container .plats ._plat {
   margin: auto;
   padding-left: 10px;
   margin-bottom: 15px;
-  overflow: hidden;
   box-shadow: 3px 11px 24px 6px rgba(176, 172, 172, 0.2);
+}
+main .container .plats ._plat .items {
+  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
