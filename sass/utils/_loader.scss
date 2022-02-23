@@ -10,6 +10,7 @@
     opacity: 0.9;
     animation: loader 200ms $animation-duration forwards;
     transform-origin: top;
+    z-index: 9999;
 
     &::after{
         content: "";

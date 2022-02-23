@@ -1,13 +1,12 @@
 main{
 
-    position: absolute;
-    width: 100%;
     margin-top: -11px;
 
     .container{
 
         background-color: $couleurGris;
         padding: 15px;
+                
     
         .entrees{
             
@@ -29,6 +28,7 @@ main{
             }
     
             ._entree{
+                animation: fadein 3s ease;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -45,19 +45,31 @@ main{
                 white-space: nowrap;
             
     
-                h3{
-                    margin: 0;
-                    font-weight:500;
-                    text-overflow: ellipsis;
+                .items{
+                    width: 100%;
+
+                    &:hover{
+                        width: 60%;
+                    }
+
+                    h3{
+                        margin: 0;
+                        font-weight:500;
+                        
+                    }
+        
+                    p{
+                        margin-top: 5px;
+                        margin-bottom: 0;
+                        font-weight: 300;
+                        color: $couleurIconeGris;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        
+                    }
                 }
-    
-                p{
-                    margin-top: 5px;
-                    margin-bottom: 0;
-                    font-weight: 300;
-                    color: $couleurIconeGris;
-                    text-overflow: ellipsis;
-                }
+                
 
                 .items-c{
                     
@@ -97,6 +109,8 @@ main{
                         i{
                             animation: rotate 1s ease;
                         }
+
+                
                     } 
                     
                 }
@@ -124,7 +138,7 @@ main{
             }
     
             ._plat{
-
+                animation: fadein 3s ease;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -135,8 +149,10 @@ main{
                 margin: auto;
                 padding-left: 10px;
                 margin-bottom: 15px;
-                
+                overflow: hidden;
                 box-shadow: 3px 11px 24px 6px rgba(176,172,172,0.2);
+                text-overflow: ellipsis;
+                white-space: nowrap;
                 
 
                 .items{
@@ -220,6 +236,7 @@ main{
                 margin-bottom: 15px;
             }
             ._dessert{
+                animation: fadein 3s ease;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -292,4 +309,5 @@ main{
         }
     }
 }
+
 

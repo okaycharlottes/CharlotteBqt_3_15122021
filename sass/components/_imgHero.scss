@@ -1,9 +1,12 @@
 .imgHero{
-    width: 100%;
+    
+    width: 47%;
+    margin-left: 26%;
     
     
     img{
-        width: 100%;
+        width: 106%;
         object-fit: contain;
+        border-radius: 50%;
     }
 }

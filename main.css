@@ -1,5 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@keyframes rotate {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translate(0, -100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
 @media only screen and (min-width: 738px) {
   header nav img {
     width: 22% !important;
@@ -27,6 +45,7 @@
 
   .Restaurant .flex {
     display: flex;
+    justify-content: center;
   }
   .Restaurant .link .cardResto {
     width: 343px !important;
@@ -57,6 +76,7 @@
   opacity: 0.9;
   animation: loader 200ms 3s forwards;
   transform-origin: top;
+  z-index: 9999;
 }
 .loader::after {
   content: "";
@@ -265,9 +285,9 @@ header nav img {
 .Restaurant .link .cardResto .flex .icone .fas {
   transition: ease-in 0.4s;
   opacity: 0;
-  background-clip: text;
-  -webkit-text-fill-color: text;
-  color: linear-gradient(352deg, #9356DC, #FF79DA);
+  background: linear-gradient(352deg, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .Restaurant .link .cardResto .flex .icone:hover .fas {
   opacity: 1;
@@ -284,25 +304,47 @@ header nav img {
 }
 
 .imgHero {
-  width: 100%;
+  width: 47%;
+  margin-left: 26%;
 }
 .imgHero img {
-  width: 100%;
+  width: 106%;
   object-fit: contain;
+  border-radius: 50%;
 }
 
 .titreMenu {
+  position: absolute;
+  width: 100%;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
   background-color: #f6f6f6;
-  margin-top: -39px;
+  margin-top: -90px;
   border-radius: 63px 67px 0 0px;
   padding-top: 16px;
 }
-.titreMenu i {
+.titreMenu .icone {
+  display: flex;
+  align-items: center;
+  padding: 27px;
+}
+.titreMenu .icone i {
   font-size: 30px;
+  right: 1rem;
+  position: absolute;
+  color: black;
+}
+.titreMenu .icone .fas {
+  transition: ease-in 0.4s;
+  opacity: 0;
+  background: linear-gradient(352deg, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.titreMenu .icone:hover .fas {
+  opacity: 1;
 }
 .titreMenu .h1Menu {
   font-family: "Shrikhand", cursive;
@@ -311,8 +353,6 @@ header nav img {
 }
 
 main {
-  position: absolute;
-  width: 100%;
   margin-top: -11px;
 }
 main .container {
@@ -333,6 +373,7 @@ main .container .entrees .trait {
   margin-bottom: 15px;
 }
 main .container .entrees ._entree {
+  animation: fadein 3s ease;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -348,16 +389,23 @@ main .container .entrees ._entree {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-main .container .entrees ._entree h3 {
+main .container .entrees ._entree .items {
+  width: 100%;
+}
+main .container .entrees ._entree .items:hover {
+  width: 60%;
+}
+main .container .entrees ._entree .items h3 {
   margin: 0;
   font-weight: 500;
-  text-overflow: ellipsis;
 }
-main .container .entrees ._entree p {
+main .container .entrees ._entree .items p {
   margin-top: 5px;
   margin-bottom: 0;
   font-weight: 300;
   color: #7c7c7c;
+  overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
 main .container .entrees ._entree .items-c {
@@ -408,6 +456,7 @@ main .container .plats .trait {
   margin-bottom: 15px;
 }
 main .container .plats ._plat {
+  animation: fadein 3s ease;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -418,7 +467,10 @@ main .container .plats ._plat {
   margin: auto;
   padding-left: 10px;
   margin-bottom: 15px;
+  overflow: hidden;
   box-shadow: 3px 11px 24px 6px rgba(176, 172, 172, 0.2);
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 main .container .plats ._plat .items {
   overflow: hidden;
@@ -483,6 +535,7 @@ main .container .desserts .trait {
   margin-bottom: 15px;
 }
 main .container .desserts ._dessert {
+  animation: fadein 3s ease;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -563,14 +616,6 @@ main .container .desserts ._dessert .items-c:hover i {
   cursor: pointer;
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(-270deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
-}
 footer {
   background-color: #353535;
   width: 100%;
