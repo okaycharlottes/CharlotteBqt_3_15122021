@@ -32,7 +32,7 @@ main{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                width: 100%;
+                width: 346px;
                 text-align: start;
                 background: white;
                 border-radius: 10px;
@@ -43,18 +43,45 @@ main{
                 box-shadow: 3px 11px 24px 6px rgba(176,172,172,0.2);
                 text-overflow: ellipsis;
                 white-space: nowrap;
+
+                &:hover{
+                    .check{
+                        margin-right: 0;
+                    }
+    
+                    i{
+                        animation: rotate 1s ease;
+                    }
+
+                    .items{
+                        width: 60%;
+                    }
+                }
+                // &:hover{
+                //     .items{
+                //         width: 60%;}
+
+                //     .check{
+                //         margin-right: 0;
+                //     }
+
+                //     i{
+                //         animation: rotate 1s ease;
+                //     }
+                // }
             
     
                 .items{
                     width: 100%;
 
-                    &:hover{
-                        width: 60%;
-                    }
+                    
 
                     h3{
                         margin: 0;
                         font-weight:500;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
                         
                     }
         
@@ -81,25 +108,7 @@ main{
                         font-weight: 400;
                     }
 
-                    .check{
-                        padding: 10px;
-                        background-color: $couleurVerte;
-                        width: 39px;
-                        height: 49px;
-                        border-radius: 0px 10px 10px 0px;
-                        display: inline-grid;
-                        text-align: center;
-                        align-items: center;
-                        margin-left: 10px;
-                        margin-right: -4rem;
-                        transition: margin-right 0.5s;
-
-
-                        i{
-                            font-size: 25px;
-                            color: white;
-                        }
-                    }
+                    
 
                     &:hover{
                         .check{
@@ -113,6 +122,25 @@ main{
                 
                     } 
                     
+                }
+                .check{
+                    padding: 10px;
+                    background-color: $couleurVerte;
+                    width: 39px;
+                    height: 49px;
+                    border-radius: 0px 10px 10px 0px;
+                    display: inline-grid;
+                    text-align: center;
+                    align-items: center;
+                    margin-left: 10px;
+                    margin-right: -4rem;
+                    transition: margin-right 0.5s;
+
+
+                    i{
+                        font-size: 25px;
+                        color: white;
+                    }
                 }
                 
             }
@@ -131,6 +159,7 @@ main{
                 margin-bottom: 0;
     
             }
+
             .trait{
                 border-top: 3px solid $couleurVerte;
                 width: 40px;
@@ -142,7 +171,7 @@ main{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                width: 100%;
+                width: 346px;
                 text-align: start;
                 background: white;
                 border-radius: 10px;
@@ -153,25 +182,59 @@ main{
                 box-shadow: 3px 11px 24px 6px rgba(176,172,172,0.2);
                 text-overflow: ellipsis;
                 white-space: nowrap;
-                
 
+                &:hover{
+                    .check{
+                        margin-right: 0;
+                    }
+    
+                    i{
+                        animation: rotate 1s ease;
+                    }
+
+                    .items{
+                        width: 60%;
+                    }
+                }
+                // &:hover{
+                //     .items{
+                //         width: 60%;}
+
+                //     .check{
+                //         margin-right: 0;
+                //     }
+
+                //     i{
+                //         animation: rotate 1s ease;
+                //     }
+                // }
+            
+    
                 .items{
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
+                    width: 100%;
+
+                    
+
+                    h3{
+                        margin: 0;
+                        font-weight:500;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+        
+                    p{
+                        margin-top: 5px;
+                        margin-bottom: 0;
+                        font-weight: 300;
+                        color: $couleurIconeGris;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        
+                    }
                 }
-    
-                h3{
-                    margin: 0;
-                    font-weight:500;
-                }
-    
-                p{
-                    margin-top: 5px;
-                    margin-bottom: 0;
-                    font-weight: 300;
-                    color: $couleurIconeGris;
-                }
+                
 
                 .items-c{
                     
@@ -183,25 +246,7 @@ main{
                         font-weight: 400;
                     }
 
-                    .check{
-                        padding: 10px;
-                        background-color: $couleurVerte;
-                        width: 39px;
-                        height: 49px;
-                        border-radius: 0px 10px 10px 0px;
-                        display: inline-grid;
-                        text-align: center;
-                        align-items: center;
-                        margin-left: 10px;
-                        margin-right: -4rem;
-                        transition: margin-right 0.5s;
-
-
-                        i{
-                            font-size: 25px;
-                            color: white;
-                        }
-                    }
+                    
 
                     &:hover{
                         .check{
@@ -211,9 +256,31 @@ main{
                         i{
                             animation: rotate 1s ease;
                         }
+
+                
                     } 
                     
                 }
+                .check{
+                    padding: 10px;
+                    background-color: $couleurVerte;
+                    width: 39px;
+                    height: 49px;
+                    border-radius: 0px 10px 10px 0px;
+                    display: inline-grid;
+                    text-align: center;
+                    align-items: center;
+                    margin-left: 10px;
+                    margin-right: -4rem;
+                    transition: margin-right 0.5s;
+
+
+                    i{
+                        font-size: 25px;
+                        color: white;
+                    }
+                }
+                
             }
         }
     
@@ -221,6 +288,7 @@ main{
     
             padding-top: 15px;
             
+           
             h2{
                 text-transform: uppercase;
                 font-family: $policeTexte;
@@ -230,17 +298,19 @@ main{
                 margin-bottom: 0;
     
             }
+
             .trait{
                 border-top: 3px solid $couleurVerte;
                 width: 40px;
                 margin-bottom: 15px;
             }
+    
             ._dessert{
                 animation: fadein 3s ease;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                width: 100%;
+                width: 346px;
                 text-align: start;
                 background: white;
                 border-radius: 10px;
@@ -251,18 +321,60 @@ main{
                 box-shadow: 3px 11px 24px 6px rgba(176,172,172,0.2);
                 text-overflow: ellipsis;
                 white-space: nowrap;
+
+                &:hover{
+                    .check{
+                        margin-right: 0;
+                    }
     
-                h3{
-                    margin: 0;
-                    font-weight:500;
+                    i{
+                        animation: rotate 1s ease;
+                    }
+
+                    .items{
+                        width: 60%;
+                    }
                 }
+                // &:hover{
+                //     .items{
+                //         width: 60%;}
+
+                //     .check{
+                //         margin-right: 0;
+                //     }
+
+                //     i{
+                //         animation: rotate 1s ease;
+                //     }
+                // }
+            
     
-                p{
-                    margin-top: 5px;
-                    margin-bottom: 0;
-                    font-weight: 300;
-                    color: $couleurIconeGris;
+                .items{
+                    width: 100%;
+
+                    
+
+                    h3{
+                        margin: 0;
+                        font-weight:500;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        
+                    }
+        
+                    p{
+                        margin-top: 5px;
+                        margin-bottom: 0;
+                        font-weight: 300;
+                        color: $couleurIconeGris;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        
+                    }
                 }
+                
 
                 .items-c{
                     
@@ -274,25 +386,7 @@ main{
                         font-weight: 400;
                     }
 
-                    .check{
-                        padding: 10px;
-                        background-color: $couleurVerte;
-                        width: 39px;
-                        height: 49px;
-                        border-radius: 0px 10px 10px 0px;
-                        display: inline-grid;
-                        text-align: center;
-                        align-items: center;
-                        margin-left: 10px;
-                        margin-right: -4rem;
-                        transition: margin-right 0.5s;
-
-
-                        i{
-                            font-size: 25px;
-                            color: white;
-                        }
-                    }
+                    
 
                     &:hover{
                         .check{
@@ -302,9 +396,31 @@ main{
                         i{
                             animation: rotate 1s ease;
                         }
+
+                
                     } 
                     
                 }
+                .check{
+                    padding: 10px;
+                    background-color: $couleurVerte;
+                    width: 39px;
+                    height: 49px;
+                    border-radius: 0px 10px 10px 0px;
+                    display: inline-grid;
+                    text-align: center;
+                    align-items: center;
+                    margin-left: 10px;
+                    margin-right: -4rem;
+                    transition: margin-right 0.5s;
+
+
+                    i{
+                        font-size: 25px;
+                        color: white;
+                    }
+                }
+                
             }
         }
     }

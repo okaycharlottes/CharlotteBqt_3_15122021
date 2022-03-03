@@ -1,5 +1,5 @@
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
 
-@media only screen and (min-width: 1181px) {
     header {
 
         nav{
@@ -11,7 +11,15 @@
 
     .imgHero{
     
-    
+        width: 47% !important;
+        margin-left: 26%;
+        
+        
+        img{
+            width: 106%;
+            object-fit: contain;
+            border-radius: 50%;
+        }
     }
 
     .trouverResto {
@@ -23,12 +31,12 @@
 
         .fonctionnementResto {
             ol{
-                display: flex !important;
-                justify-content: space-evenly !important;
+                //display: flex !important;
+                //justify-content: space-evenly !important;
                 a{
                     
                     li{
-                        width: 100% !important;
+                        //width: 100% !important;
                         transition: ease 0.3s;
 
                         &:hover{
@@ -54,7 +62,7 @@
             .flex{
                 display: flex;
                 justify-content: center;
-                
+                flex-wrap: wrap;
             }
             .link{
 
