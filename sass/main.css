@@ -18,6 +18,45 @@
     transform: translate(0, 0);
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header nav img {
+    width: 22% !important;
+  }
+
+  .trouverResto h1 {
+    width: 100% !important;
+  }
+
+  .fonctionnementResto .btnFonctionnementResto {
+    position: relative;
+  }
+  .fonctionnementResto .btnFonctionnementResto span {
+    right: 264px !important;
+  }
+
+  .Restaurant .flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .Restaurant .link .cardResto {
+    width: 343px !important;
+    margin-right: 10px !important;
+  }
+
+  .container {
+    padding: 28px !important;
+  }
+  .container ._entree, .container ._plat, .container ._dessert {
+    width: 100%;
+  }
+
+  footer div {
+    display: flex !important;
+    align-items: center !important;
+    line-height: 2.5 !important;
+  }
+}
 @media only screen and (min-width: 1181px) {
   header nav img {
     width: 17% !important;
@@ -38,70 +77,16 @@
   .fonctionnementResto ol a li:hover {
     background-color: #9356dc1f;
   }
-  .fonctionnementResto ol a li span {
-    position: relative !important;
-    left: -56px !important;
+  .fonctionnementResto .btnFonctionnementResto {
+    position: relative;
+  }
+  .fonctionnementResto .btnFonctionnementResto span {
+    right: 33px !important;
   }
 
   .Restaurant .flex {
     display: flex;
     justify-content: center;
-  }
-  .Restaurant .link .cardResto {
-    width: 343px !important;
-    margin-right: 10px !important;
-  }
-
-  .container {
-    padding: 28px !important;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .container ._entree, .container ._plat, .container ._dessert {
-    width: 100%;
-  }
-
-  footer div {
-    display: flex !important;
-    align-items: center !important;
-    line-height: 2.5 !important;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  header nav img {
-    width: 22% !important;
-  }
-
-  .imgHero {
-    width: 47% !important;
-    margin-left: 26%;
-  }
-  .imgHero img {
-    width: 106%;
-    object-fit: contain;
-    border-radius: 50%;
-  }
-
-  .trouverResto h1 {
-    width: 100% !important;
-  }
-
-  .fonctionnementResto ol a li {
-    transition: ease 0.3s;
-  }
-  .fonctionnementResto ol a li:hover {
-    background-color: #9356dc1f;
-  }
-  .fonctionnementResto ol a li span {
-    position: relative !important;
-    left: -56px !important;
-  }
-
-  .Restaurant .flex {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
   }
   .Restaurant .link .cardResto {
     width: 343px !important;
@@ -279,21 +264,24 @@ header nav img {
   justify-content: space-evenly;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   margin: 20px;
-  color: black;
   background-color: #f6f6f6;
+}
+.fonctionnementResto ol li a {
+  color: black;
 }
 .fonctionnementResto .btnFonctionnementResto {
   position: relative;
 }
 .fonctionnementResto .btnFonctionnementResto span {
   position: relative;
-  border-radius: 68%;
+  right: 72px;
+  border-radius: 73%;
   background-color: #9356DC;
-  width: 29px;
-  height: 24px;
+  width: 51px;
+  height: 38px;
   color: white;
   text-align: center;
-  padding: 7px 0 0;
+  padding: 4px 8px 4px 8px;
 }
 .fonctionnementResto .btnFonctionnementResto i {
   color: #7c7c7c;
@@ -392,7 +380,7 @@ header nav img {
   background-color: #f6f6f6;
   margin-top: -90px;
   border-radius: 63px 67px 0 0px;
-  padding-top: 16px;
+  padding-top: 23px;
 }
 .titreMenu .icone {
   display: flex;
@@ -419,7 +407,7 @@ header nav img {
 .titreMenu .h1Menu {
   font-family: "Shrikhand", cursive;
   letter-spacing: 1px;
-  font-size: 35px !important;
+  font-size: 30px !important;
 }
 
 main {
@@ -429,99 +417,10 @@ main .container {
   background-color: #f6f6f6;
   padding: 15px;
 }
-main .container .entrees h2 {
-  text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  color: #7c7c7c;
-  font-size: 17px;
-  margin-bottom: 0;
-}
-main .container .entrees .trait {
-  border-top: 3px solid #99E2D0;
-  width: 40px;
-  margin-bottom: 15px;
-}
-main .container .entrees ._entree {
-  animation: fadein 2s ease;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 346px;
-  text-align: start;
-  background: white;
-  border-radius: 10px;
-  margin: auto;
-  padding-left: 10px;
-  margin-bottom: 15px;
-  overflow: hidden;
-  box-shadow: 3px 11px 24px 6px rgba(176, 172, 172, 0.2);
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-main .container .entrees ._entree:hover .check {
-  margin-right: 0;
-}
-main .container .entrees ._entree:hover i {
-  animation: rotate 1s ease;
-}
-main .container .entrees ._entree:hover .items {
-  width: 60%;
-}
-main .container .entrees ._entree .items {
-  width: 100%;
-}
-main .container .entrees ._entree .items h3 {
-  margin: 0;
-  font-weight: 500;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-main .container .entrees ._entree .items p {
-  margin-top: 5px;
-  margin-bottom: 0;
-  font-weight: 300;
-  color: #7c7c7c;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-main .container .entrees ._entree .items-c {
-  display: flex;
-  align-items: center;
-}
-main .container .entrees ._entree .items-c p {
-  color: black;
-  font-weight: 400;
-}
-main .container .entrees ._entree .items-c:hover .check {
-  margin-right: 0;
-}
-main .container .entrees ._entree .items-c:hover i {
-  animation: rotate 1s ease;
-}
-main .container .entrees ._entree .check {
-  padding: 10px;
-  background-color: #99E2D0;
-  width: 39px;
-  height: 49px;
-  border-radius: 0px 10px 10px 0px;
-  display: inline-grid;
-  text-align: center;
-  align-items: center;
-  margin-left: 10px;
-  margin-right: -4rem;
-  transition: margin-right 0.5s;
-}
-main .container .entrees ._entree .check i {
-  font-size: 25px;
-  color: white;
-}
-main .container .plats {
+main .container .entrees, main .container .plats, main .container .desserts {
   padding-top: 15px;
 }
-main .container .plats h2 {
+main .container .entrees h2, main .container .plats h2, main .container .desserts h2 {
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -529,12 +428,12 @@ main .container .plats h2 {
   font-size: 17px;
   margin-bottom: 0;
 }
-main .container .plats .trait {
+main .container .entrees .trait, main .container .plats .trait, main .container .desserts .trait {
   border-top: 3px solid #99E2D0;
   width: 40px;
   margin-bottom: 15px;
 }
-main .container .plats ._plat {
+main .container .entrees .template, main .container .plats .template, main .container .desserts .template {
   animation: fadein 2s ease;
   display: flex;
   align-items: center;
@@ -551,26 +450,26 @@ main .container .plats ._plat {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-main .container .plats ._plat:hover .check {
+main .container .entrees .template:hover .check, main .container .plats .template:hover .check, main .container .desserts .template:hover .check {
   margin-right: 0;
 }
-main .container .plats ._plat:hover i {
+main .container .entrees .template:hover i, main .container .plats .template:hover i, main .container .desserts .template:hover i {
   animation: rotate 1s ease;
 }
-main .container .plats ._plat:hover .items {
+main .container .entrees .template:hover .items, main .container .plats .template:hover .items, main .container .desserts .template:hover .items {
   width: 60%;
 }
-main .container .plats ._plat .items {
+main .container .entrees .template .items, main .container .plats .template .items, main .container .desserts .template .items {
   width: 100%;
 }
-main .container .plats ._plat .items h3 {
+main .container .entrees .template .items h3, main .container .plats .template .items h3, main .container .desserts .template .items h3 {
   margin: 0;
   font-weight: 500;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-main .container .plats ._plat .items p {
+main .container .entrees .template .items p, main .container .plats .template .items p, main .container .desserts .template .items p {
   margin-top: 5px;
   margin-bottom: 0;
   font-weight: 300;
@@ -579,21 +478,21 @@ main .container .plats ._plat .items p {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-main .container .plats ._plat .items-c {
+main .container .entrees .template .items-c, main .container .plats .template .items-c, main .container .desserts .template .items-c {
   display: flex;
   align-items: center;
 }
-main .container .plats ._plat .items-c p {
+main .container .entrees .template .items-c p, main .container .plats .template .items-c p, main .container .desserts .template .items-c p {
   color: black;
   font-weight: 400;
 }
-main .container .plats ._plat .items-c:hover .check {
+main .container .entrees .template .items-c:hover .check, main .container .plats .template .items-c:hover .check, main .container .desserts .template .items-c:hover .check {
   margin-right: 0;
 }
-main .container .plats ._plat .items-c:hover i {
+main .container .entrees .template .items-c:hover i, main .container .plats .template .items-c:hover i, main .container .desserts .template .items-c:hover i {
   animation: rotate 1s ease;
 }
-main .container .plats ._plat .check {
+main .container .entrees .template .check, main .container .plats .template .check, main .container .desserts .template .check {
   padding: 10px;
   background-color: #99E2D0;
   width: 39px;
@@ -606,99 +505,7 @@ main .container .plats ._plat .check {
   margin-right: -4rem;
   transition: margin-right 0.5s;
 }
-main .container .plats ._plat .check i {
-  font-size: 25px;
-  color: white;
-}
-main .container .desserts {
-  padding-top: 15px;
-}
-main .container .desserts h2 {
-  text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  color: #7c7c7c;
-  font-size: 17px;
-  margin-bottom: 0;
-}
-main .container .desserts .trait {
-  border-top: 3px solid #99E2D0;
-  width: 40px;
-  margin-bottom: 15px;
-}
-main .container .desserts ._dessert {
-  animation: fadein 2s ease;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 346px;
-  text-align: start;
-  background: white;
-  border-radius: 10px;
-  margin: auto;
-  padding-left: 10px;
-  margin-bottom: 15px;
-  overflow: hidden;
-  box-shadow: 3px 11px 24px 6px rgba(176, 172, 172, 0.2);
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-main .container .desserts ._dessert:hover .check {
-  margin-right: 0;
-}
-main .container .desserts ._dessert:hover i {
-  animation: rotate 1s ease;
-}
-main .container .desserts ._dessert:hover .items {
-  width: 60%;
-}
-main .container .desserts ._dessert .items {
-  width: 100%;
-}
-main .container .desserts ._dessert .items h3 {
-  margin: 0;
-  font-weight: 500;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-main .container .desserts ._dessert .items p {
-  margin-top: 5px;
-  margin-bottom: 0;
-  font-weight: 300;
-  color: #7c7c7c;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-main .container .desserts ._dessert .items-c {
-  display: flex;
-  align-items: center;
-}
-main .container .desserts ._dessert .items-c p {
-  color: black;
-  font-weight: 400;
-}
-main .container .desserts ._dessert .items-c:hover .check {
-  margin-right: 0;
-}
-main .container .desserts ._dessert .items-c:hover i {
-  animation: rotate 1s ease;
-}
-main .container .desserts ._dessert .check {
-  padding: 10px;
-  background-color: #99E2D0;
-  width: 39px;
-  height: 49px;
-  border-radius: 0px 10px 10px 0px;
-  display: inline-grid;
-  text-align: center;
-  align-items: center;
-  margin-left: 10px;
-  margin-right: -4rem;
-  transition: margin-right 0.5s;
-}
-main .container .desserts ._dessert .check i {
+main .container .entrees .template .check i, main .container .plats .template .check i, main .container .desserts .template .check i {
   font-size: 25px;
   color: white;
 }

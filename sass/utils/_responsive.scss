@@ -1,4 +1,4 @@
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+@media only screen and (min-width : 768px) and (max-width : 1024px){
 
     header {
 
@@ -9,18 +9,7 @@
         }
     }
 
-    .imgHero{
-    
-        width: 47% !important;
-        margin-left: 26%;
-        
-        
-        img{
-            width: 106%;
-            object-fit: contain;
-            border-radius: 50%;
-        }
-    }
+   
 
     .trouverResto {
         h1{
@@ -30,28 +19,19 @@
         
 
         .fonctionnementResto {
-            ol{
-                //display: flex !important;
-                //justify-content: space-evenly !important;
-                a{
-                    
-                    li{
-                        //width: 100% !important;
-                        transition: ease 0.3s;
-
-                        &:hover{
-                            background-color: #9356dc1f;
-                            
-                        } 
-
-        
-                        span{
-                            position: relative !important;
-                            left:-56px !important; 
-                        }
+            
+                
+                .btnFonctionnementResto{
+                    position: relative;
+            
+                
+                    span{
+                        
+                        right: 264px !important;
+                        
                     }
                 }
-            }
+            
             
         }
          
@@ -74,6 +54,98 @@
         } 
         .container{
             padding: 28px !important;
+        
+
+            ._entree, ._plat, ._dessert{
+                width: 100%;
+            }
+        }
+        
+        
+        footer{
+            div{
+                display: flex !important;
+                align-items: center !important;
+                line-height: 2.5 !important;
+            }
+        }
+
+
+
+}
+
+@media only screen and (min-width: 1181px) {
+    header {
+
+        nav{
+            img{
+                width: 17% !important;
+            }
+        }
+    }
+
+    .trouverResto {
+        h1{
+            width: 100% !important;
+        }
+    }
+        
+
+        .fonctionnementResto {
+            ol{
+                display: flex !important;
+                justify-content: space-evenly !important;
+                a{
+                    
+                    li{
+                        width: 100% !important;
+                        transition: ease 0.3s;
+
+                        &:hover{
+                            background-color: #9356dc1f;
+                            
+                        } 
+
+                        
+                    }
+                }
+            }
+         
+            
+            .btnFonctionnementResto{
+                position: relative;
+        
+            
+                span{
+                    
+                    right: 33px !important;
+                    
+                }
+            }
+        }
+         
+         
+        
+    
+        .Restaurant{
+            .flex{
+                display: flex;
+                justify-content: center;
+                
+            }
+            .link{
+
+                .cardResto {
+                    width: 343px !important;
+                    margin-right: 10px !important;
+                }
+            }
+        } 
+        .container{
+            padding: 28px !important;
+            display: flex;
+            justify-content:  space-evenly;
+            align-items: center;
 
             ._entree, ._plat, ._dessert{
                 width: 100%;

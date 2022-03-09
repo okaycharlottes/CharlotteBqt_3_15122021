@@ -8,146 +8,7 @@ main{
         padding: 15px;
                 
     
-        .entrees{
-            
-    
-            h2{
-                text-transform: uppercase;
-                font-family: $policeTexte;
-                font-weight: 300;
-                color: $couleurIconeGris;
-                font-size: 17px;
-                margin-bottom: 0;
-    
-            }
-
-            .trait{
-                border-top: 3px solid $couleurVerte;
-                width: 40px;
-                margin-bottom: 15px;
-            }
-    
-            ._entree{
-                animation: fadein 3s ease;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                width: 346px;
-                text-align: start;
-                background: white;
-                border-radius: 10px;
-                margin: auto;
-                padding-left: 10px;
-                margin-bottom: 15px;
-                overflow: hidden;
-                box-shadow: 3px 11px 24px 6px rgba(176,172,172,0.2);
-                text-overflow: ellipsis;
-                white-space: nowrap;
-
-                &:hover{
-                    .check{
-                        margin-right: 0;
-                    }
-    
-                    i{
-                        animation: rotate 1s ease;
-                    }
-
-                    .items{
-                        width: 60%;
-                    }
-                }
-                // &:hover{
-                //     .items{
-                //         width: 60%;}
-
-                //     .check{
-                //         margin-right: 0;
-                //     }
-
-                //     i{
-                //         animation: rotate 1s ease;
-                //     }
-                // }
-            
-    
-                .items{
-                    width: 100%;
-
-                    
-
-                    h3{
-                        margin: 0;
-                        font-weight:500;
-                        overflow: hidden;
-                        white-space: nowrap;
-                        text-overflow: ellipsis;
-                        
-                    }
-        
-                    p{
-                        margin-top: 5px;
-                        margin-bottom: 0;
-                        font-weight: 300;
-                        color: $couleurIconeGris;
-                        overflow: hidden;
-                        white-space: nowrap;
-                        text-overflow: ellipsis;
-                        
-                    }
-                }
-                
-
-                .items-c{
-                    
-                    display: flex;
-                    align-items: center;
-
-                    p{
-                        color: black;
-                        font-weight: 400;
-                    }
-
-                    
-
-                    &:hover{
-                        .check{
-                            margin-right: 0;
-                        }
-
-                        i{
-                            animation: rotate 1s ease;
-                        }
-
-                
-                    } 
-                    
-                }
-                .check{
-                    padding: 10px;
-                    background-color: $couleurVerte;
-                    width: 39px;
-                    height: 49px;
-                    border-radius: 0px 10px 10px 0px;
-                    display: inline-grid;
-                    text-align: center;
-                    align-items: center;
-                    margin-left: 10px;
-                    margin-right: -4rem;
-                    transition: margin-right 0.5s;
-
-
-                    i{
-                        font-size: 25px;
-                        color: white;
-                    }
-                }
-                
-            }
-        }
-    
-        .plats{
-    
+        .entrees, .plats, .desserts{
             padding-top: 15px;
     
             h2{
@@ -166,8 +27,8 @@ main{
                 margin-bottom: 15px;
             }
     
-            ._plat{
-                animation: fadein 3s ease;
+            .template{
+                animation: fadein 2s ease;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -196,157 +57,7 @@ main{
                         width: 60%;
                     }
                 }
-                // &:hover{
-                //     .items{
-                //         width: 60%;}
-
-                //     .check{
-                //         margin-right: 0;
-                //     }
-
-                //     i{
-                //         animation: rotate 1s ease;
-                //     }
-                // }
-            
-    
-                .items{
-                    width: 100%;
-
-                    
-
-                    h3{
-                        margin: 0;
-                        font-weight:500;
-                        overflow: hidden;
-                        white-space: nowrap;
-                        text-overflow: ellipsis;
-                    }
-        
-                    p{
-                        margin-top: 5px;
-                        margin-bottom: 0;
-                        font-weight: 300;
-                        color: $couleurIconeGris;
-                        overflow: hidden;
-                        white-space: nowrap;
-                        text-overflow: ellipsis;
-                        
-                    }
-                }
-                
-
-                .items-c{
-                    
-                    display: flex;
-                    align-items: center;
-
-                    p{
-                        color: black;
-                        font-weight: 400;
-                    }
-
-                    
-
-                    &:hover{
-                        .check{
-                            margin-right: 0;
-                        }
-
-                        i{
-                            animation: rotate 1s ease;
-                        }
-
-                
-                    } 
-                    
-                }
-                .check{
-                    padding: 10px;
-                    background-color: $couleurVerte;
-                    width: 39px;
-                    height: 49px;
-                    border-radius: 0px 10px 10px 0px;
-                    display: inline-grid;
-                    text-align: center;
-                    align-items: center;
-                    margin-left: 10px;
-                    margin-right: -4rem;
-                    transition: margin-right 0.5s;
-
-
-                    i{
-                        font-size: 25px;
-                        color: white;
-                    }
-                }
-                
-            }
-        }
-    
-        .desserts{
-    
-            padding-top: 15px;
-            
-           
-            h2{
-                text-transform: uppercase;
-                font-family: $policeTexte;
-                font-weight: 300;
-                color: $couleurIconeGris;
-                font-size: 17px;
-                margin-bottom: 0;
-    
-            }
-
-            .trait{
-                border-top: 3px solid $couleurVerte;
-                width: 40px;
-                margin-bottom: 15px;
-            }
-    
-            ._dessert{
-                animation: fadein 3s ease;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                width: 346px;
-                text-align: start;
-                background: white;
-                border-radius: 10px;
-                margin: auto;
-                padding-left: 10px;
-                margin-bottom: 15px;
-                overflow: hidden;
-                box-shadow: 3px 11px 24px 6px rgba(176,172,172,0.2);
-                text-overflow: ellipsis;
-                white-space: nowrap;
-
-                &:hover{
-                    .check{
-                        margin-right: 0;
-                    }
-    
-                    i{
-                        animation: rotate 1s ease;
-                    }
-
-                    .items{
-                        width: 60%;
-                    }
-                }
-                // &:hover{
-                //     .items{
-                //         width: 60%;}
-
-                //     .check{
-                //         margin-right: 0;
-                //     }
-
-                //     i{
-                //         animation: rotate 1s ease;
-                //     }
-                // }
+              
             
     
                 .items{
@@ -423,6 +134,8 @@ main{
                 
             }
         }
+    
+        
     }
 }
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="/sass/main.css">
     <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/c496f314ee.js" crossorigin="anonymous" defer></script>
@@ -15,7 +15,7 @@
     <div class="loader"></div>
     <header>
         <nav>
-            <a href="index.html" class="arrow"><i class="fas fa-arrow-left opacity"></i></a>
+            
             <img src="assets/images/logo/ohmyfood.png" alt="Logo OhmyFood" class="logo">
                 
         </nav>
@@ -37,9 +37,9 @@
 
         <div class="btnFonctionnementResto">
             <ol>
-               <a href="#"><li> <span>1</span> <i class="fas fa-mobile-alt"></i> Choisissez un restaurant</li></a> 
-                <a href="#"><li><span>2</span> <i class="fas fa-list"></i> Composez votre menu</li></a>
-                <a href="#"><li> <span>3</span><i class="fas fa-store"></i> Dégustez au restaurant</li></a>
+               <li> <a href="#"><span>1</span> <i class="fas fa-mobile-alt"></i> Choisissez un restaurant</a> </li>
+                <li><a href="#"><span>2</span> <i class="fas fa-list"></i> Composez votre menu</a></li>
+                <li><a href="#"> <span>3</span><i class="fas fa-store"></i> Dégustez au restaurant</a></li>
                 
             </ol>
         </div>
@@ -49,91 +49,96 @@
         <h2>Restaurants</h2>
 
         <div class="flex">
-             <a class="link" href="lapalettedugout.html"> 
-                <div class="cardResto">
-                    <span class="new"> Nouveau</span>
-                    <img src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Restaurant" >
-                    <div class="flex">
+            <div class="row">
+                <a class="link " href="lapalettedugout.html"> 
+                    <div class="cardResto">
+                        <span class="new"> Nouveau</span>
+                        <img src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Restaurant" >
+                        <div class="flex">
+                                
+                            <div class="icone">
+                               <span class="empty"><i class="far fa-heart"></i></span>
+                               <span class="full"><i class="fas fa-heart"></i></span> 
+                            </div>
+    
+                            <div class="cardBody">
                             
-                        <div class="icone">
-                           <span class="empty"><i class="far fa-heart"></i></span>
-                           <span class="full"><i class="fas fa-heart"></i></span> 
+                                <h3>La palette du gout</h3>
+                                <p>Ménilmontant</p>
+                            </div>
                         </div>
-
-                        <div class="cardBody">
                         
-                            <h2>La palette du gout</h2>
-                            <p>Ménilmontant</p>
-                        </div>
+                        
                     </div>
-                    
-                    
-                </div>
-            </a>
-
-            <a class="link" href="lanoteenchantee.html">
-                <div class="cardResto">
-                    <span class="new"> Nouveau</span>
-                    <img src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Restaurant" >
-                    <div class="flex">
+                </a>
+    
+                <a class="link " href="lanoteenchantee.html">
+                    <div class="cardResto">
+                        <span class="new"> Nouveau</span>
+                        <img src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Restaurant" >
+                        <div class="flex">
+                                
+                            <div class="icone">
+                                <span class="empty"><i class="far fa-heart"></i></span>
+                                <span class="full"><i class="fas fa-heart"></i></span> 
+                             </div>
+    
+                            <div class="cardBody">
                             
-                        <div class="icone">
-                            <span class="empty"><i class="far fa-heart"></i></span>
-                            <span class="full"><i class="fas fa-heart"></i></span> 
-                         </div>
-
-                        <div class="cardBody">
-                        
-                            <h2>La note enchantée</h2>
-                            <p>Charonne</p>
+                                <h3>La note enchantée</h3>
+                                <p>Charonne</p>
+                            </div>
                         </div>
+                        
+                        
                     </div>
-                    
-                    
-                </div>
-            </a>
-
-            <a class="link" href="alafrancaise.html">
-                <div class="cardResto">
-                <img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant" >
-                    <div class="flex">
+                </a>
+            </div>
+             
+            <div class="row">
+                <a class="link " href="alafrancaise.html">
+                    <div class="cardResto">
+                    <img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant" >
+                        <div class="flex">
+                                
+                            <div class="icone">
+                                <span class="empty"><i class="far fa-heart"></i></span>
+                                <span class="full"><i class="fas fa-heart"></i></span> 
+                             </div>
+    
+                            <div class="cardBody">
                             
-                        <div class="icone">
-                            <span class="empty"><i class="far fa-heart"></i></span>
-                            <span class="full"><i class="fas fa-heart"></i></span> 
-                         </div>
-
-                        <div class="cardBody">
-                        
-                            <h2>A la française</h2>
-                            <p>Cité rouge</p>
+                                <h3>A la française</h3>
+                                <p>Cité rouge</p>
+                            </div>
                         </div>
+                        
+                        
                     </div>
-                    
-                    
-                </div>
-            </a>
-
-            <a class="link" href="ledelicedessens.html">
-                <div class="cardResto">
-                <img src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Restaurant" >
-                    <div class="flex">
+                </a>
+    
+                <a class="link " href="ledelicedessens.html">
+                    <div class="cardResto">
+                    <img src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Restaurant" >
+                        <div class="flex">
+                                
+                            <div class="icone">
+                                <span class="empty"><i class="far fa-heart"></i></span>
+                                <span class="full"><i class="fas fa-heart"></i></span> 
+                             </div>
+    
+                            <div class="cardBody">
                             
-                        <div class="icone">
-                            <span class="empty"><i class="far fa-heart"></i></span>
-                            <span class="full"><i class="fas fa-heart"></i></span> 
-                         </div>
-
-                        <div class="cardBody">
-                        
-                            <h2>Le délice des sens</h2>
-                            <p>Folie-Méricourt</p>
+                                <h3>Le délice des sens</h3>
+                                <p>Folie-Méricourt</p>
+                            </div>
                         </div>
+                        
+                        
                     </div>
-                    
-                    
-                </div>
-            </a>
+                </a>
+            </div>
+            
 
         </div>
     </section>
@@ -141,12 +146,15 @@
     <footer>
     
         <div>
-            <img src="assets/images/logo/logoblanc.png" class="colorSvg"alt="Logo ohmyfood">
-
-            <a href="#"><i class="fas fa-utensils footer"></i> Proposer un restaurant</a>
-            <a href="#"> <i class="fas fa-hands-helping footer"></i>Devenir partenaire</a>
-            <a href="#"> Mentions légales</a>
-            <a href="#"> Contact</a>
+            <img src="assets/images/logo/logoblanc.png" class="colorSvg" alt="Logo ohmyfood">
+            <ul>
+                <li> <a href="#"><i class="fas fa-utensils footer"></i> Proposer un restaurant</a></li>
+                <li><a href="#"> <i class="fas fa-hands-helping footer"></i>Devenir partenaire</a></li>
+                <li><a href="#"> Mentions légales</a></li>
+                <li> <a href="#"> Contact</a></li>  
+               
+            </ul>
+            
         </div>
     </footer>
     
