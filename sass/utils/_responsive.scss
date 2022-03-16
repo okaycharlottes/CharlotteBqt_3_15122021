@@ -62,13 +62,6 @@
         }
         
         
-        footer{
-            div{
-                display: flex !important;
-                align-items: center !important;
-                line-height: 2.5 !important;
-            }
-        }
 
 
 
@@ -156,7 +149,7 @@
         footer{
             div{
                 display: flex !important;
-                align-items: center !important;
+                align-items: flex-start !important;
                 line-height: 2.5 !important;
             }
         }

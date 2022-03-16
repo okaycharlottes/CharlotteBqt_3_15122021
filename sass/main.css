@@ -50,12 +50,6 @@
   .container ._entree, .container ._plat, .container ._dessert {
     width: 100%;
   }
-
-  footer div {
-    display: flex !important;
-    align-items: center !important;
-    line-height: 2.5 !important;
-  }
 }
 @media only screen and (min-width: 1181px) {
   header nav img {
@@ -105,7 +99,7 @@
 
   footer div {
     display: flex !important;
-    align-items: center !important;
+    align-items: flex-start !important;
     line-height: 2.5 !important;
   }
 }
@@ -255,7 +249,6 @@ header nav img {
   padding: 0;
 }
 .fonctionnementResto ol li {
-  padding: 20px;
   border: 1px solid transparent;
   border-radius: 20px;
   align-items: center;
@@ -265,9 +258,14 @@ header nav img {
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   margin: 20px;
   background-color: #f6f6f6;
+  transition: 0.2s;
 }
 .fonctionnementResto ol li a {
   color: black;
+  padding: 20px;
+}
+.fonctionnementResto ol li:hover {
+  background-color: #9256dc2a;
 }
 .fonctionnementResto .btnFonctionnementResto {
   position: relative;
@@ -553,6 +551,9 @@ footer div img {
 footer div img .colorSvg {
   fill: white;
   background-color: white;
+}
+footer div ul {
+  padding: 0;
 }
 footer div a {
   text-decoration: none;

@@ -6,7 +6,7 @@
         padding: 0;
         li{
         
-            padding: 20px;
+            
             border: 1px solid transparent;
             border-radius: 20px;
             align-items: center;
@@ -16,11 +16,16 @@
             box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
             margin: 20px;
             background-color: $couleurGris;
+            transition: 0.2s;
 
             a{
                 color: black;
+                padding: 20px;
             }
            
+            &:hover{
+                background-color: #9256dc2a;
+            }
         }
 
 
